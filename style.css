@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+header {
+  background: #f6d1aa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 2px solid #636363;
+}
+
+.logo {
+  background: white;
+  border: 1px solid #636363;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 15px;
+  color: #000;
+  font-weight: bold;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+
+.profile-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.profile-card {
+  background: #f6d1aa;
+  border: 2px solid #636363;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 30px;
+  gap: 30px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.profile-image {
+  width: 260px;
+  height: 160px;
+  border: 2px solid #636363;
+  border-radius: 50% / 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  font-weight: bold;
+}
+
+.profile-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.profile-info h2 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
